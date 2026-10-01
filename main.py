@@ -81,7 +81,7 @@ async def summarize_api(payload: TextRequest):
         return error_response("Please provide text to summarize.", 400)
     return {"summary": summarize_text(text)}
 
-
+#commit
 # Quiz generation - POST API
 @app.post("/quiz")
 @app.post("/quiz/", include_in_schema=False)
