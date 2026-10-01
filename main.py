@@ -28,6 +28,7 @@ class TopicRequest(BaseModel):
 
 class TextRequest(BaseModel):
     text: str = Field(..., min_length=1, max_length=20000)
+    #activate
 
 
 def error_response(message: str, status_code: int) -> JSONResponse:
