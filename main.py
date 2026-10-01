@@ -24,6 +24,7 @@ templates = Jinja2Templates(directory=str(BASE_DIR / "templates"))
 
 class TopicRequest(BaseModel):
     topic: str = Field(..., min_length=1, max_length=500)
+    #change
 
 
 class TextRequest(BaseModel):
